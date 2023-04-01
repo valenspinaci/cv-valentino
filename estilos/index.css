@@ -1,0 +1,38 @@
+body{
+    background-color: #100559;
+    font-family: sans-serif;
+}
+
+.foto-cv{
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    width: 10%;
+}
+
+.titulo{
+    color: #f4ad66;
+    font-weight: lighter;
+}
+
+.subtitulo{
+    color: #f4ad66;
+    font-weight: lighter;
+}
+
+.texto{
+    color: white;
+    font-weight: lighter;
+}
+
+.etiquetas{
+    color: #52D8D0;
+}
+
+.lista{
+    list-style-type: none;
+    padding: 4px;
+}
+
+.enlace{
+    text-decoration: none;
+}
