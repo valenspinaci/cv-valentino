@@ -1,12 +1,41 @@
 body{
     background-color: #100559;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header{
+    display: block;
+    width: 100%;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header nav{
+    width: 100%;
+    height: 15rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar{
+    width: 100%;
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .foto-cv{
     box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
-    width: 10%;
+    width: 20%;
 }
 
 .titulo{
@@ -16,16 +45,99 @@ body{
 
 .subtitulo{
     color: #f4ad66;
+    font-weight: 400;
+}
+
+.sectionBienvenida .texto{
+    color: white;
     font-weight: lighter;
+    font-size: 1.5rem;
 }
 
 .texto{
     color: white;
-    font-weight: lighter;
+    font-weight: 400;
+}
+
+.bienvenidaTexto .textoSubrayado{
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #f4ad66;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.bienvenidaTexto .texto{
+    color: white;
+    font-weight: 300;
+}
+
+.subrayadoCarreras{
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #f4ad66;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+}
+
+.redondeadoCV{
+    padding: .5rem;
+    padding-top: .25rem;
+    margin: .15rem;
+    border-radius: 3rem;
+    border-style: dotted;
+    border-color: #f4ad66;
+    text-shadow: 0px 0px 60px #339CB4;
+}
+
+.bienvenidaTexto .titulo{
+    font-weight: bolder;
+}
+
+.luz{
+    text-shadow: 0px 0px 60px #339CB4;
+}
+
+.textoSubrayado{
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #f4ad66;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
 }
 
 .etiquetas{
     color: #52D8D0;
+    font-weight: lighter;
+}
+
+.sobremi{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.sobremi .titulo{
+    font-weight: 400;
+}
+
+.aptitudes{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.listaAptitudes{
+    display: flex;
+    flex-direction: row;
+}
+
+.listaAptitudes .titulo{
+    font-weight: bolder;
 }
 
 .lista{
@@ -35,4 +147,68 @@ body{
 
 .enlace{
     text-decoration: none;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+    border-radius: 2rem;
+}
+
+.sectionBienvenida{
+    margin-top: 10rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.bienvenidaTexto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10rem;
+}
+
+.listaEducacion{
+    display: flex;
+}
+
+.carreras{
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    list-style-type: none;
+}
+
+.cursos{
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    list-style-type: none;
+}
+
+.carrerasCursos{
+    list-style-type: none;
+    padding-top: 1rem;
+}
+
+.datosCarreras{
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.datosCarreras li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.15);
 }
