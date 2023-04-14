@@ -1,43 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 body{
     background-color: #100559;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
 }
 
 header{
-    display: block;
+    display: flex;
     width: 100%;
-    height: 5rem;
+    height: 10vh;
     padding: 0;
     margin: 0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-.header nav{
+nav{
     width: 100%;
-    height: 15rem;
-    padding: 0;
-    margin: 0;
+    align-items: center;
     display: flex;
 }
 
 .navbar{
     width: 100%;
-    height: 4rem;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+main{
+    height: 75vh;
+    width: 100%;
+}
+
+.sectionBienvenida{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionBienvenida .texto{
+    color: white;
+    font-weight: lighter;
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 1.5rem;
+}
+
+.bienvenidaTexto{
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenidaTexto .textoSubrayado{
+    color: white;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #f4ad66;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.bienvenidaTexto .texto{
+    color: white;
+    font-weight: 300;
+}
+
+.bienvenidaTexto .titulo{
+    font-weight: bolder;
+}
+
+.bienvenidaImagen{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .foto-cv{
     box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
+    width: 30%;
 }
 
 .titulo{
@@ -50,30 +103,9 @@ header{
     font-weight: 400;
 }
 
-.sectionBienvenida .texto{
-    color: white;
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
-
 .texto{
     color: white;
     font-weight: 400;
-}
-
-.bienvenidaTexto .textoSubrayado{
-    color: white;
-    font-weight: bolder;
-    font-size: 2rem;
-    text-decoration: underline;
-    text-decoration-color: #f4ad66;
-    text-decoration-style: solid;
-    text-decoration-thickness: 3px;
-}
-
-.bienvenidaTexto .texto{
-    color: white;
-    font-weight: 300;
 }
 
 .subrayadoCarreras{
@@ -95,10 +127,6 @@ header{
     text-shadow: 0px 0px 60px #339CB4;
 }
 
-.bienvenidaTexto .titulo{
-    font-weight: bolder;
-}
-
 .textoSubrayado{
     color: white;
     font-weight: bolder;
@@ -113,25 +141,93 @@ header{
     font-weight: lighter;
 }
 
-.sobremi{
+.sobremiMain{
     display: flex;
     flex-direction: column;
-    margin: 3rem;
+}
+
+.sobremi{
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobremi .texto{
+    padding-top: .75rem;
+}
+
+.sobremi .textoSubrayado{
+    padding-bottom: 1rem;
 }
 
 .sobremi .titulo{
     font-weight: 400;
 }
 
+.divTecnicas .titulo{
+    padding: 1rem 0;
+}
+
 .aptitudes{
+    height: 100%;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    margin: 3rem;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
 }
 
 .listaAptitudes{
     display: flex;
+    flex-direction: column;
+}
+
+.listaTecnicas{
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.tecnicas1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tecnicas1 li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnicas2{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tecnicas2 li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divBlandas .titulo{
+    padding: 1rem 0;
+}
+
+.listaBlandas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .listaAptitudes .titulo{
@@ -153,29 +249,6 @@ header{
     padding: 0.25rem;
     margin-right: 0.5rem;
     border-radius: 2rem;
-}
-
-.sectionBienvenida{
-    margin-top: 5rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bienvenidaTexto{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10rem;
-}
-
-.bienvenidaImagen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .listaEducacion{
@@ -342,12 +415,55 @@ header{
 }
 
 footer{
-    position: absolute;
     bottom: 0;
-    display: block;
     width: 100%;
-    height: 5rem;
-    padding: 0;
-    margin: 0;
+    height: 15vh;
     box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaceIconos{
+    font-size: 2rem;
+}
+
+.iconos:hover{
+    color: #f4ad66;
+    transition: .5s ease;
+}
+
+.linea{
+    width: 99.9%;
+    color: #100559;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.iconos{
+    color: white;
+    font-size: 3rem;
+}
+
+.divDerechos{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divDerechos .texto{
+    font-weight: lighter;
+    font-size: 1.25rem;
+}
+
+.iconosFooter{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
