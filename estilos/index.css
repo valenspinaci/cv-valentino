@@ -251,6 +251,35 @@ main{
     border-radius: 2rem;
 }
 
+.educacion{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.educacion h2{
+    margin-top: 1rem;
+}
+
+.educacion .titulo{
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #f4ad66;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+
+.educacion .nombres{
+    font-weight: bolder;
+    color: white;
+}
+
+.educacion .etiquetas{
+    font-weight: bolder;
+}
+
 .listaEducacion{
     margin-top: 2rem;
     display: flex;
@@ -261,6 +290,10 @@ main{
     padding-right: 3rem;
     padding-left: 3rem;
     list-style-type: none;
+}
+
+.contenedorCursos{
+    width: 100%;
 }
 
 .cursos{
@@ -283,41 +316,59 @@ main{
 
 .datosCarreras li{
     padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.educacion{
-    margin: 3rem;
-}
-
-.educacion .titulo{
-    color: white;
-    font-weight: bolder;
-    text-decoration: underline;
-    text-decoration-color: #f4ad66;
-    text-decoration-style: solid;
-    text-decoration-thickness: 2px;
-}
-
-.educacion .nombres{
-    font-weight: bolder;
-    color: white;
-}
-
-.educacion .etiquetas{
-    font-weight: bolder;
 }
 
 .datosCarreras .explicacion{
     font-weight: lighter;
 }
 
+.logosEducacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainXp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .textoError{
-    margin: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.contenedorTextoError h2{
+    margin-bottom: 1rem;
+}
+
+.contenedorTextoError p{
+    margin-bottom: .75rem;
+}
+
+.contenedorTextoError .last{
+    margin-bottom: 2rem;
 }
 
 .textoError .redondeado{
     font-weight: bolder;
+}
+
+.imagenError{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenError img{
+    width: 50%;
 }
 
 .boton{
@@ -336,13 +387,15 @@ main{
     transition: .5s;
 }
 
-.last{
-    margin-bottom: 3rem;
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .seccionContacto{
     display: flex;
-    margin: 3rem;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -352,6 +405,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.textoContacto p{
+    margin-top: 1rem;
 }
 
 .iconosContacto{
