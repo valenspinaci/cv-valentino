@@ -961,6 +961,22 @@ footer{
         height: auto;
     }
 
+    .educacion h2{
+        font-size: 1.15rem;
+    }
+
+    .educacion .titulo{
+        font-size: .95rem;
+    }
+
+    .nombres{
+        font-size: .95rem;
+    }
+
+    .datosCarreras li{
+        font-size: .9rem;
+    }
+
     .listaEducacion{
         flex-direction: column;
     }
@@ -980,6 +996,14 @@ footer{
         height: 60vh;
     }
 
+    .mainXp h2{
+        font-size: 1.15rem;
+    }
+
+    .mainXp p{
+        font-size: 1rem;
+    }
+
     .textoError{
         padding: 0;
         margin-left: 0;
@@ -988,6 +1012,18 @@ footer{
 
     .imagenError{
         display: none;
+    }
+
+    .mainPortfolio h2{
+        font-size: 1rem;
+    }
+
+    .mainPortfolio h3{
+        font-size: .95rem;
+    }
+
+    .mainPortfolio p{
+        font-size: .9rem;
     }
 
     .cards{
@@ -1002,6 +1038,14 @@ footer{
     .seccion3D .cards{
         flex-direction: column;
         align-items:center;
+    }
+
+    .mainContacto h2{
+        font-size: 1.15rem;
+    }
+
+    .mainContacto p{
+        font-size: 1rem;
     }
 
     .footerIndex{
