@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
-
 
 body{
     background-color: #100559;
@@ -18,18 +18,36 @@ header{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
-nav{
+.contenedor_grande_navbar{
+    width: 100%;
+    display: flex;
+}
+
+#navbar_grande{
     width: 100%;
     align-items: center;
     display: flex;
 }
 
-.navbar{
+.navbar_grande{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 2rem;
+}
+
+.navbar_grande li a:hover{
+    color: white;
+    transition: .5s;
+}
+
+#navbar{
+    display: none;
+}
+
+.contenedorIcono{
+    display: none;
 }
 
 main{
@@ -143,6 +161,8 @@ main{
 .sobremiMain{
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin-top: 1rem;
 }
 
 .sobremi{
@@ -151,6 +171,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .sobremi .texto{
@@ -185,45 +206,113 @@ main{
 
 .listaTecnicas{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tecnicas1{
     display: flex;
+    margin: 1rem;
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.tecnicas1 li{
+.tecnicas1-1{
+    width: 100%;
     display: flex;
+    margin: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tecnicas1-2{
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tecnicas1-1 li{
+    display: flex;
+    padding: 0 .5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tecnicas1 li i{
+.tecnicas1-2 li{
+    display: flex;
+    padding: 0 .5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnicas1-1 li i{
+    padding-bottom: .5rem;
+}
+
+.tecnicas1-2 li i{
     padding-bottom: .5rem;
 }
 
 .tecnicas2{
     display: flex;
+    margin: 1rem;
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.tecnicas2 li{
+.tecnicas2-1{
+    width: 100%;
     display: flex;
+    margin: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tecnicas2-2{
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tecnicas2-1 li{
+    display: flex;
+    padding: 0 .5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tecnicas2 li i{
+.tecnicas2-2 li{
+    display: flex;
+    padding: 0 .5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnicas2-1 li i{
+    padding-bottom: .5rem;
+}
+
+.tecnicas2-2 li i{
     padding-bottom: .5rem;
 }
 
@@ -249,6 +338,46 @@ main{
     padding-bottom: .5rem;
 }
 
+.blandas1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blandas1 li{
+    display: flex;
+    padding: 0 .5rem;
+    padding-top: .5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blandas1 li p{
+    text-align: center;
+}
+
+.blandas2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blandas2 li{
+    display: flex;
+    padding: 0 .5rem;
+    padding-top: .5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blandas2 li p{
+    text-align: center;
+}
+
 .listaAptitudes .titulo{
     font-weight: bolder;
 }
@@ -268,6 +397,11 @@ main{
     padding: 0.25rem;
     margin-right: 0.5rem;
     border-radius: 2rem;
+}
+
+.mainEducacion{
+    height: 80vh;
+    margin-bottom: 1rem;
 }
 
 .educacion{
@@ -536,12 +670,28 @@ main{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.cards1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.cards2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .card{
-    height: 35vh;
-    width: 25%;
+    height: auto;
+    width: 50%;
     background-color: #100559;
     box-shadow: 5px 5px 5px rgba(0.15, 0.15, 0.15, 0.15);
     border-radius: 1rem 0;
@@ -556,7 +706,7 @@ main{
 }
 
 .card:hover{
-    width: 27%;
+    width: 52%;
     transition: .5s;
 }
 
@@ -602,11 +752,12 @@ footer{
 
 .iconos{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .divDerechos{
     height: 100%;
+    padding: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,4 +777,505 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+@media(max-width:576px){
+    header{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_grande_navbar{
+        display: none;
+    }
+    .contenedorIcono{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .icono{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        color: white;
+    }
+    .icono:hover{
+        color: #f4ad66;
+        transition: .5s;
+    }
+    #navbar{
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    #navbar:target{
+        display: block;
+    }
+    .navbar{
+        border-bottom: 1px solid #339CB4;
+        margin-bottom: 1rem;
+    }
+    .navbar li{
+        border-top: 1px solid #339CB4;
+        padding: .5rem;
+    }
+    .cerrar{
+        text-decoration: none;
+        color: white;
+        margin: 1rem;
+    }
+    .cerrar:hover{
+        padding: .5rem;
+        border: 2px solid #f4ad66;
+        border-radius: 2rem;
+        transition: .5s;
+    }
+    .mainIndex{
+        height: auto;
+    }
+    .sectionBienvenida{
+        width: 100%;
+    }
+    .bienvenidaTexto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .bienvenidaTexto div{
+        width: 90%;
+    }
+    .bienvenidaTexto div .textoSubrayado{
+        font-size: 1rem;
+    }
+
+    .bienvenidaTexto div .texto{
+        font-size: 0.9rem;
+    }
+
+    .sobremi .textoSubrayado{
+        font-size: 1rem;
+    }
+
+    .sobremi .texto{
+        font-size: 0.9rem;
+    }
+
+    .aptitudes .textoSubrayado{
+        font-size: 1rem;
+    }
+
+    .divTecnicas .titulo{
+        font-size: 1rem;
+    }
+
+    .divBlandas .titulo{
+        font-size: 1rem;
+    }
+
+    .listaTecnicas{
+        flex-direction: column;
+    }
+
+    .tecnicas1{
+        flex-direction: column;
+        margin: 0;
+        font-size: .9rem;
+    }
+
+    .tecnicas1-1{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas1-2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas2{
+        flex-direction: column;
+        margin: 0;
+        font-size: .9rem;
+    }
+
+    .tecnicas2-1{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas2-2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas1 li i{
+        display: none;
+    }
+
+    .tecnicas2 li i{
+        display: none;
+    }
+
+    .listaBlandas{
+        flex-direction: row;
+    }
+
+    .blandas1{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: .9rem;
+    }
+
+    .blandas2{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: .9rem;
+    }
+
+    .blandas1 li i{
+        display: none;
+    }
+
+    .blandas2 li i{
+        display: none;
+    }
+
+    .mainEducacion{
+        height: auto;
+    }
+
+    .listaEducacion{
+        flex-direction: column;
+    }
+
+    .listaEducacion li{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logosEducacion{
+        justify-content: center;
+    }
+
+    .mainXp{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 60vh;
+    }
+
+    .textoError{
+        padding: 0;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .imagenError{
+        display: none;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .seccionDiseño .cards{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .seccion3D .cards{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .footerIndex{
+        height: 15vh;
+    }
+
+    .divDerechos .texto{
+        font-size: 1rem;
+    }
+
+    .iconosFooter{
+        font-size: .5rem;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_grande_navbar{
+        display: none;
+    }
+    .contenedorIcono{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .icono{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        color: white;
+    }
+    .icono:hover{
+        color: #f4ad66;
+        transition: .5s;
+    }
+    #navbar{
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    #navbar:target{
+        display: block;
+    }
+    .navbar{
+        border-bottom: 1px solid #339CB4;
+        margin-bottom: 1rem;
+    }
+    .navbar li{
+        border-top: 1px solid #339CB4;
+        padding: .5rem;
+    }
+    .cerrar{
+        text-decoration: none;
+        color: white;
+        margin: 1rem;
+    }
+    .cerrar:hover{
+        padding: .5rem;
+        border: 2px solid #f4ad66;
+        border-radius: 2rem;
+        transition: .5s;
+    }
+    main{
+        height: auto;
+    }
+    .sectionBienvenida{
+        width: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    .bienvenidaTexto{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .bienvenidaImagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .bienvenidaImagen img{
+        width: 50%;
+    }
+
+    .listaTecnicas{
+        align-items: center;
+    }
+
+    .tecnicas1{
+        flex-direction: column;
+    }
+
+    .tecnicas1-1{
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .tecnicas1-1 li{
+        padding-top: .5rem;
+    }
+
+    .tecnicas1-2{
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .tecnicas1-2 li{
+        padding-top: .5rem;
+    }
+
+    .tecnicas2{
+        flex-direction: column;
+    }
+
+    .tecnicas2-1{
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .tecnicas2-1 li{
+        padding-top: .5rem;
+    }
+
+    .tecnicas2-2{
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .tecnicas2-2 li{
+        padding-top: .5rem;
+    }
+
+    .mainEducacion{
+        height: auto;
+    }
+
+    .listaEducacion{
+        flex-direction: column;
+    }
+
+    .listaEducacion li{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logosEducacion{
+        justify-content: center;
+    }
+
+    .mainXp{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 60vh;
+    }
+
+    .textoError{
+        padding: 0;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .imagenError{
+        display: none;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .seccionDiseño .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .seccionDiseño .cards .card{
+        width: 40%;
+    }
+
+    .seccion3D .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .seccion3D .cards .card{
+        width: 40%;
+    }
+
+    .mainContacto{
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccionContacto{
+        width: 90%;
+    }
+
+    .textoContacto{
+        text-align: center;
+    }
+
+    .iconosContacto{
+        margin: 1rem;
+    }
+
+    .izq li a i{
+        font-size: 2.5rem;
+    }
+
+    .der li a i{
+        font-size: 2.5rem;
+    }
+
+    .divDerechos .texto{
+        font-size: 1rem;
+    }
+
+    .iconosFooter{
+        font-size: .5rem;
+    }
+}
+
+@media(max-width:992px){
+    .bienvenidaTexto div{
+        width: 95%;
+    }
+
+    .bienvenidaTexto div .textoSubrayado{
+        font-size: 1.25rem;
+    }
+
+    .bienvenidaTexto div .texto{
+        font-size: 1.15rem;
+    }
+
+    .listaBlandas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainEducacion{
+        height: auto;
+    }
+
+    .divDerechos .texto{
+        font-size: 1rem;
+    }
+
+    .iconosFooter{
+        font-size: .5rem;
+    }
+}
+
+@media(max-width:1200px){
+    .bienvenidaTexto div{
+        width: 90%;
+    }
+
+    .imagen-logo{
+        width: 15%;
+    }
+
+    .mainEducacion{
+        height: auto;
+    }
 }
