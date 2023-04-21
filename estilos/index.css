@@ -782,277 +782,50 @@ footer{
     align-items: center;
 }
 
-@media(max-width:576px){
-    header{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor_grande_navbar{
-        display: none;
-    }
-    .contenedorIcono{
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .icono{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        font-size: 2rem;
-        color: white;
-    }
-    .icono:hover{
-        color: #f4ad66;
-        transition: .5s;
-    }
-    #navbar{
-        margin: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
-    #navbar:target{
-        display: block;
-    }
-    .navbar{
-        border-bottom: 1px solid #339CB4;
-        margin-bottom: 1rem;
-    }
-    .navbar li{
-        border-top: 1px solid #339CB4;
-        padding: .5rem;
-    }
-    .cerrar{
-        text-decoration: none;
-        color: white;
-        margin: 1rem;
-    }
-    .cerrar:hover{
-        padding: .5rem;
-        border: 2px solid #f4ad66;
-        border-radius: 2rem;
-        transition: .5s;
-    }
-    .mainIndex{
-        height: auto;
-    }
-    .sectionBienvenida{
-        width: 100%;
-    }
-    .bienvenidaTexto{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
+
+@media(max-width:1200px){
     .bienvenidaTexto div{
         width: 90%;
     }
+
+    .imagen-logo{
+        width: 15%;
+    }
+
+    .mainEducacion{
+        height: auto;
+    }
+}
+
+@media(max-width:992px){
+    .bienvenidaTexto div{
+        width: 95%;
+    }
+
     .bienvenidaTexto div .textoSubrayado{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .bienvenidaTexto div .texto{
-        font-size: 0.9rem;
-    }
-
-    .sobremi .textoSubrayado{
-        font-size: 1rem;
-    }
-
-    .sobremi .texto{
-        font-size: 0.9rem;
-    }
-
-    .aptitudes .textoSubrayado{
-        font-size: 1rem;
-    }
-
-    .divTecnicas .titulo{
-        font-size: 1rem;
-    }
-
-    .divBlandas .titulo{
-        font-size: 1rem;
-    }
-
-    .listaTecnicas{
-        flex-direction: column;
-    }
-
-    .tecnicas1{
-        flex-direction: column;
-        margin: 0;
-        font-size: .9rem;
-    }
-
-    .tecnicas1-1{
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-        padding: 0;
-    }
-
-    .tecnicas1-2{
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-        padding: 0;
-    }
-
-    .tecnicas2{
-        flex-direction: column;
-        margin: 0;
-        font-size: .9rem;
-    }
-
-    .tecnicas2-1{
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-        padding: 0;
-    }
-
-    .tecnicas2-2{
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-        padding: 0;
-    }
-
-    .tecnicas1 li i{
-        display: none;
-    }
-
-    .tecnicas2 li i{
-        display: none;
+        font-size: 1.15rem;
     }
 
     .listaBlandas{
-        flex-direction: row;
-    }
-
-    .blandas1{
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        font-size: .9rem;
-    }
-
-    .blandas2{
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: .9rem;
-    }
-
-    .blandas1 li i{
-        display: none;
-    }
-
-    .blandas2 li i{
-        display: none;
+        align-items: center;
     }
 
     .mainEducacion{
         height: auto;
     }
 
-    .educacion h2{
-        font-size: 1.15rem;
-    }
-
-    .educacion .titulo{
-        font-size: .95rem;
-    }
-
-    .nombres{
-        font-size: .95rem;
-    }
-
-    .datosCarreras li{
-        font-size: .9rem;
-    }
-
-    .listaEducacion{
-        flex-direction: column;
-    }
-
-    .listaEducacion li{
-        padding: 0;
-        margin-bottom: 1rem;
-    }
-
-    .logosEducacion{
-        justify-content: center;
-    }
-
-    .mainXp{
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        height: 60vh;
-    }
-
-    .mainXp h2{
-        font-size: 1.15rem;
-    }
-
-    .mainXp p{
-        font-size: 1rem;
-    }
-
-    .textoError{
-        padding: 0;
-        margin-left: 0;
+    .textoContacto{
         width: 90%;
     }
 
-    .imagenError{
-        display: none;
-    }
-
-    .mainPortfolio h2{
-        font-size: 1rem;
-    }
-
-    .mainPortfolio h3{
-        font-size: .95rem;
-    }
-
-    .mainPortfolio p{
-        font-size: .9rem;
-    }
-
-    .cards{
-        flex-direction: column;
-    }
-
-    .seccionDiseño .cards{
-        flex-direction: column;
-        align-items:center;
-    }
-
-    .seccion3D .cards{
-        flex-direction: column;
-        align-items:center;
-    }
-
-    .mainContacto h2{
-        font-size: 1.15rem;
-    }
-
-    .mainContacto p{
-        font-size: 1rem;
-    }
-
-    .footerIndex{
-        height: 15vh;
+    .textoContacto p{
+        text-align: center;
     }
 
     .divDerechos .texto{
@@ -1281,27 +1054,284 @@ footer{
     }
 }
 
-@media(max-width:992px){
-    .bienvenidaTexto div{
-        width: 95%;
+@media(max-width:576px){
+    header{
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
-
+    .contenedor_grande_navbar{
+        display: none;
+    }
+    .contenedorIcono{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .icono{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        color: white;
+    }
+    .icono:hover{
+        color: #f4ad66;
+        transition: .5s;
+    }
+    #navbar{
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    #navbar:target{
+        display: block;
+    }
+    .navbar{
+        border-bottom: 1px solid #339CB4;
+        margin-bottom: 1rem;
+    }
+    .navbar li{
+        border-top: 1px solid #339CB4;
+        padding: .5rem;
+    }
+    .cerrar{
+        text-decoration: none;
+        color: white;
+        margin: 1rem;
+    }
+    .cerrar:hover{
+        padding: .5rem;
+        border: 2px solid #f4ad66;
+        border-radius: 2rem;
+        transition: .5s;
+    }
+    .mainIndex{
+        height: auto;
+    }
+    .sectionBienvenida{
+        width: 100%;
+    }
+    .bienvenidaTexto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .bienvenidaTexto div{
+        width: 90%;
+    }
     .bienvenidaTexto div .textoSubrayado{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .bienvenidaTexto div .texto{
-        font-size: 1.15rem;
+        font-size: 0.9rem;
+    }
+
+    .sobremi .textoSubrayado{
+        font-size: 1rem;
+    }
+
+    .sobremi .texto{
+        font-size: 0.9rem;
+    }
+
+    .aptitudes .textoSubrayado{
+        font-size: 1rem;
+    }
+
+    .divTecnicas .titulo{
+        font-size: 1rem;
+    }
+
+    .divBlandas .titulo{
+        font-size: 1rem;
+    }
+
+    .listaTecnicas{
+        flex-direction: column;
+    }
+
+    .tecnicas1{
+        flex-direction: column;
+        margin: 0;
+        font-size: .9rem;
+    }
+
+    .tecnicas1-1{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas1-2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas2{
+        flex-direction: column;
+        margin: 0;
+        font-size: .9rem;
+    }
+
+    .tecnicas2-1{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas2-2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tecnicas1 li i{
+        display: none;
+    }
+
+    .tecnicas2 li i{
+        display: none;
     }
 
     .listaBlandas{
-        display: flex;
+        flex-direction: row;
+    }
+
+    .blandas1 li{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .blandas1{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        font-size: .9rem;
+        text-align: start;
+    }
+
+    .blandas2{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: .9rem;
+    }
+
+    .blandas1 li i{
+        display: none;
+    }
+
+    .blandas2 li i{
+        display: none;
     }
 
     .mainEducacion{
         height: auto;
+    }
+
+    .educacion h2{
+        font-size: 1.15rem;
+    }
+
+    .educacion .titulo{
+        font-size: .95rem;
+    }
+
+    .nombres{
+        font-size: .95rem;
+    }
+
+    .datosCarreras li{
+        font-size: .9rem;
+    }
+
+    .listaEducacion{
+        flex-direction: column;
+    }
+
+    .listaEducacion li{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logosEducacion{
+        justify-content: center;
+    }
+
+    .mainXp{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 60vh;
+    }
+
+    .mainXp h2{
+        font-size: 1.15rem;
+    }
+
+    .mainXp p{
+        font-size: 1rem;
+    }
+
+    .textoError{
+        padding: 0;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .imagenError{
+        display: none;
+    }
+
+    .mainPortfolio h2{
+        font-size: 1rem;
+    }
+
+    .mainPortfolio h3{
+        font-size: .95rem;
+    }
+
+    .mainPortfolio p{
+        font-size: .9rem;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .seccionDiseño .cards{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .seccion3D .cards{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .mainContacto h2{
+        font-size: 1.15rem;
+    }
+
+    .mainContacto p{
+        font-size: 1rem;
+    }
+
+    .footerIndex{
+        height: 15vh;
     }
 
     .divDerechos .texto{
@@ -1310,19 +1340,5 @@ footer{
 
     .iconosFooter{
         font-size: .5rem;
-    }
-}
-
-@media(max-width:1200px){
-    .bienvenidaTexto div{
-        width: 90%;
-    }
-
-    .imagen-logo{
-        width: 15%;
-    }
-
-    .mainEducacion{
-        height: auto;
     }
 }
