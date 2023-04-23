@@ -904,10 +904,12 @@ footer{
     }
     .bienvenidaTexto{
         width: 100%;
+        height: 35vh;
         margin-bottom: 1rem;
     }
     .bienvenidaImagen{
         width: 100%;
+        height: 35vh;
         display: flex;
         justify-content: center;
         margin-bottom: 2rem;
@@ -984,7 +986,7 @@ footer{
     .mainXp{
         margin-top: 1rem;
         margin-bottom: 2rem;
-        height: 60vh;
+        height: 70vh;
     }
 
     .textoError{
@@ -1020,7 +1022,7 @@ footer{
     }
 
     .mainContacto{
-        height: 60vh;
+        height: 75vh;
         justify-content: center;
         align-items: center;
     }
@@ -1119,6 +1121,7 @@ footer{
     }
     .bienvenidaTexto{
         width: 100%;
+        height: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1134,6 +1137,10 @@ footer{
 
     .bienvenidaTexto div .texto{
         font-size: 0.9rem;
+    }
+
+    .bienvenidaImagen{
+        height: 35vh;
     }
 
     .sobremi .textoSubrayado{
@@ -1275,7 +1282,7 @@ footer{
     .mainXp{
         margin-top: 1rem;
         margin-bottom: 2rem;
-        height: 60vh;
+        height: 70vh;
     }
 
     .mainXp h2{
@@ -1320,6 +1327,10 @@ footer{
     .seccion3D .cards{
         flex-direction: column;
         align-items:center;
+    }
+
+    .mainContacto{
+        height: 75vh;
     }
 
     .mainContacto h2{
