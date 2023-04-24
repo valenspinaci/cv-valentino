@@ -1216,7 +1216,7 @@ footer{
     }
 
     .listaBlandas{
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .blandas1 li{
